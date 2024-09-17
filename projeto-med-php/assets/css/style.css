@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "cabecalho"
+    "principal";
+    grid-template-columns: 1fr;
+    grid-template-rows: 8vh 1fr;
+    
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+
+    align-items: center;
+}
+
+.logo > a > h1{
+    color: white;
+    font-size: 2rem; 
+    font-weight: 200;   
+    font-family: 'Vina Sans', sans-serif;
+
+}
+.logo > a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.img-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0px 10px;
+}
+
+.logo-img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu > a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.principal{
+    grid-area: principal;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.conteudos{
+    background-color: #e4e4e4;
+    width: 95%;
+    height: calc(95% - 15px);
+    box-shadow: -2px 7px 19px 0px rgba(0,0,0,0.45);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    overflow-y: scroll;
+
+}
+
+.text-centro{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.text-centro > h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+.conteudos-edit{
+    background-color: #e4e4e4;
+    width: 95%;
+    height: 95%;
+    box-shadow: -2px 7px 19px 0px rgba(0,0,0,0.45);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    overflow-y: scroll;
+
+}
+
+.paciente{
+    flex-basis: 33%;
+    background-color: #e4e4e4;
+    display: flex;
+    height: min-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: -2px 7px 19px 0px rgba(0,0,0,0.45);
+
+}
+
+.button-edit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.separador{
+    border-bottom: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+}
